@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+		<h1 id="title">Survey Form</h1>
+		<p id="description"> Let us know what you love about pie.</p>
+		<form id="survey-form">
+
+			<label id="name-label" for="name">Name:</label>
+			<input id="name" type="text" name="Name" placeholder="Enter your name" required>
+			<label id="email-label" for="email">Email:</label>
+			<input id="email" type="email" name="Email" placeholder="Enter your email" required>
+			<label id="number-label" for="number">Age: </label>
+			<input id="number" type="number" name="Age" placeholder="Enter your age" min="16" max="111">
+
+			<label for="dropdown">What is your favorite type of pie?</label>
+			<select id="dropdown">
+				<option value="" disabled selected>Select your favorite</option>
+				<option value="fruit">Fruit</option>
+				<option value="Cream">Cream</option>
+				<option value="Nut">Nut</option>
+			</select>
+
+				<legend>How often do you eat pie?</legend>
+				<fieldset>
+					<ul>
+						<li><input id="daily" type="radio" name="frequency" value="daily">
+						<label for="daily">Every day!</label></li>
+						<li><input id="weekly" type="radio" name="frequency" value="weekly">
+						<label for="weekly">Once a week</label></li>
+						<li><input id="monthly" type="radio" name="frequency" value="monthly">
+						<label for="monthly">About once a month</label></li>
+					</ul>
+				</fieldset>
+			<label for="love">What do you love most about pie?</label>
+			<select id="love">
+				<option value="" disabled selected>Select one</option>
+				<option value="ice cream">It goes with ice cream</option>
+				<option value="eat fruit">Great way to eat fruit</option>
+				<option value="love all">What's not to love??</option>
+			</select>
+
+			<label for="festival">What would you like to do at a pie festival?</label>
+			<fieldset>
+				<ul>
+					<li><input type="checkbox" name="slice" value="slice">Pie by the slice</li>
+					<li><input type="checkbox" name="contest" value="contest">Pie baking contest</li>
+					<li><input type="checkbox" name="class" value="class">Pie making class</li>
+					<li><input type="checkbox" name="store" value="store">Pie making supplies for sale</li>
+				</ul>
+			</fieldset>
+			<label for="other">Anything else you would like to say about pie?</label>
+			<textarea name="other" form="survey-form" placeholder="Your pie thoughts..."></textarea>
+			<input id="submit" type="submit" value="Submit" name="">
+		</form>
+
+	</div>
+</body>
+</html>
