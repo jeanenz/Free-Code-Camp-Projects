@@ -19,27 +19,9 @@ footer {
     margin-top: 20px;
 }
 
-#video {
-    display: block;
-    margin: 30px auto;
-}
-
+/************ Header ************/
 #header {
     vertical-align: bottom;
-}
-
-#nav-bar {
-    display: block;
-    padding-top: 20px;
-    float: right;
-}
-
-#nav-bar a {
-    text-decoration: none;
-    padding-left: 20px;
-}
-
-#header {
     display: block;
     margin: 0 auto;
     padding: 10px 50px;
@@ -60,6 +42,29 @@ footer {
   clear: both;
 }
 
-.main {
-    margin-top: 100px;
+/** Top Nav **/
+#nav-bar {
+    display: block;
+    padding-top: 20px;
+    float: right;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+/*******************************/
+
+#aboutUs {
+    padding-top: 100px;
+}
+
+#video {
+    display: block;
+    margin: 30px auto;
+}
+
+.products {
+    display: flex;
 }
